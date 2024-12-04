@@ -95,7 +95,7 @@ if doc1_file and doc2_file:
         Comparison file:
         {doc2}
 
-        Provide a concise summary of the differences in terms of structure, content, and meaning in a bullet point format (max 10 points). 
+        Provide a concise summary of the key differences in terms of structure, content, and meaning in a bullet point format (max 10 points) limit only to clause which has substantial difference. 
         Provide potential impacts of each change below the differences. 
 
         Provide a recommended negotiation strategy or plan (max 5 bullet points) to address these changes with the supplier in a separate section. 
