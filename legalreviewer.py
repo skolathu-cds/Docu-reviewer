@@ -16,36 +16,54 @@ else:
     st.error("API Key not found. Please configure it in a .env file.")
 
 # Set up Streamlit UI
-st.title("Document Comparison and Analysis Tool")
+st.title("Document Comparison and Analysis")
 
 # Sidebar Navigation
-st.sidebar.title("Navigation")
-selection = st.sidebar.radio(
-    "Go to",
-    options=["Tool Overview", "Disclaimer", "About Creator"],
-)
+if "expanded_section" not in st.session_state:
+    st.session_state.expanded_section = "About the Tool"  # Default expanded section
 
-if selection == "Tool Overview":
-    st.sidebar.markdown("### Tool Overview")
+def set_section(section):
+    """Update session state to expand the selected section and collapse others."""
+    st.session_state.expanded_section = section
+
+st.sidebar.title("Navigation")
+
+# Rectangular sections in the sidebar
+sections = ["About the Tool", "Disclaimer", "Creator Info"]
+
+for section in sections:
+    if st.sidebar.button(section, use_container_width=True):
+        set_section(section)
+
+# Show content of the selected section
+st.sidebar.markdown("---")
+if st.session_state.expanded_section == "About the Tool":
+    st.sidebar.subheader("About the Tool")
     st.sidebar.markdown("""
-    This tool helps you compare and analyze documents. 
-    **How to use:**
-    - Upload two `.docx` files (Reference and Comparison files).
-    - Click the respective buttons to generate a summary, ask questions, or compare documents.
+    **Document Comparison and Analysis Tool**  
+    This tool allows users to:
+    - Compare two documents and summarize key differences.
+    - Answer questions based on document content.
+    - Generate a concise summary with highlighted differences.
+
+    **How to use**:
+    - Upload the reference and comparison files in .docx format.
+    - Use the provided buttons to analyze and interact with the documents.
     """)
-elif selection == "Disclaimer":
-    st.sidebar.markdown("### Disclaimer")
+elif st.session_state.expanded_section == "Disclaimer":
+    st.sidebar.subheader("Disclaimer")
     st.sidebar.markdown("""
-    - This tool uses an open-source LLM for analysis.
-    - Data transmitted to the LLM may not be private.
-    - Ensure no sensitive information is uploaded.
-    - While the tool aims for high accuracy, always validate results.
+    **Data Privacy and Accuracy Notice**  
+    - This tool uses open-source LLMs to process the uploaded documents. 
+    - Document data may be transmitted to external servers for processing.  
+    - Please avoid uploading sensitive or confidential data.  
+    - The tool's outputs are based on LLM-generated analysis and may not always be fully accurate.  
     """)
-elif selection == "About Creator":
-    st.sidebar.markdown("### About the Creator")
+elif st.session_state.expanded_section == "Creator Info":
+    st.sidebar.subheader("Creator Info")
     st.sidebar.markdown("""
-    Created by **Sriram Kolathu**.  
-    [Connect on LinkedIn](https://linkedin.com/in/sriramkolathu)
+    **Tool Created By**:  
+    [Sriram Kolathu](https://www.linkedin.com/in/sriram-kolathu-cpsm-61b03211/)  
     """)
 
 # Upload files
