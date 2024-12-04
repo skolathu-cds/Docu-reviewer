@@ -100,7 +100,10 @@ if doc1_file and doc2_file:
 
         Provide a recommended negotiation strategy or plan (max 5 bullet points) to address these changes with the supplier in a separate section. 
         Prioritize the clauses from very important to less important to optimize negotiations.
-        """
+        
+        in case of payment term difference , then provide cost of finance or fincial impact based on wapt calculation and explain the financial imapct in real numbers for a period of one year. in the absence of contract value use USD 1000000 as base value for comparison use interest rate in USA or Canada for calculation. If query is not related to payment term avoid this fiancial impact due to payment term.
+        
+       """
 
         try:
             response = openai.ChatCompletion.create(
@@ -137,9 +140,7 @@ if doc1_file and doc2_file:
         Provide a detailed answer based on Comparison file in comparison to Reference file, prioritizing the Comparison file.
         you do not make up your own answers, limit the content to the documents.
         Reference file is the company agreed standard.
-        in case of a query relating to payment term, then provide cost of finance or fincial impact based on wapt calculation and explain the financial imapct in real numbers for a period of one year. in the absence of contract value use USD 1000000 as base value for comparison use interest rate in USA or Canada for calculation. If query is not related to payment term avoid this fiancial impact due to payment term.
-        only incase of liability or insurance related query use the value in the contract to arrive at potential impact.
-        """
+         """
 
         try:
             response = openai.ChatCompletion.create(
