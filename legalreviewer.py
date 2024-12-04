@@ -98,7 +98,7 @@ if doc1_file and doc2_file:
         Provide a concise summary of the differences in terms of structure, content, and meaning in a bullet point format (max 10 points). 
         Provide potential impacts of each change below the differences. 
 
-        Provide a recommended negotiation strategy or plan to address these changes with the supplier in a separate section. 
+        Provide a recommended negotiation strategy or plan (max 5 bullet points) to address these changes with the supplier in a separate section. 
         Prioritize the clauses from very important to less important to optimize negotiations.
         """
 
@@ -134,7 +134,10 @@ if doc1_file and doc2_file:
         {doc1}
 
         Question: {question}
-        Provide a detailed answer based on the documents, prioritizing the Comparison file.
+        Provide a detailed answer based on Comparison file in comparison to Reference file, prioritizing the Comparison file.
+        you do not make up your own answers, limit the content to the documents.
+        Reference file is the company agreed standard.
+        in case of pyament term related query, provide cost of finance or fincial impact based on wapt calculation and explain the financial imapct in real numbers. in the absence of contract value use USD 1000000 as base value for comparison use interest rate in USA or Canada for calculation.
         """
 
         try:
@@ -161,7 +164,7 @@ if doc1_file and doc2_file:
     def generate_summary_doc2():
         prompt = f"""
         Provide a brief summary of the Comparison file and highlight the key differences compared to the Reference file.
-        Focus on the impact of these differences. Limit the summary to 500 words.
+        Focus on the impact of these differences and provide recomended action plan or negotiation strategy. Limit the summary to 200 words.
 
         Comparison file:
         {doc2_text}
