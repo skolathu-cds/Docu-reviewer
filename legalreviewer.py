@@ -138,7 +138,7 @@ if doc1_file and doc2_file:
 
         Question: {question}
         Provide a detailed answer based on Comparison file in comparison to Reference file, prioritizing the Comparison file.
-        you do not make up your own answers, limit the content to the documents.
+        you do not make up your own answers, limit the content to the documents. Limit the answer to max 100 words, 
         Reference file is the company agreed standard.
          """
 
