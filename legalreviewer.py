@@ -132,16 +132,19 @@ if doc1_file and doc2_file:
         
         1.	Payment Terms: The original agreement allows the client xx days to pay invoices, while the revised agreement reduces this to xx days.
             o	Financial Impact: Using an interest rate of y% (average rate in the USA), the cost of financing the payment for xx days would be approximately x,xxx.xx  per year for a assumed contract value of USD x,xxx,xxx.
-
+            
         2.	Termination Notice Period: The original agreement requires a xx-day advance written notice for termination, whereas the revised agreement extends this to 60 days.
             o	Impact: The longer notice period in the revised agreement provides more time for both parties to prepare for termination, potentially reducing any abrupt disruptions in services.
         
+
         3.	Term Duration: The original agreement has an indefinite term until cancelled with a 40-day notice, while the revised agreement specifies a fixed term of x yyyy from the date of contract execution.
             o	Impact: The fixed term in the revised agreement provides more certainty and clarity regarding the duration of the contractual relationship.
         
+
         4.	Jurisdiction and Venue: The original agreement specifies Kansas as the governing law and jurisdiction, while the revised agreement changes the venue to New Jersey, USA.
             o	Impact: The change in jurisdiction and venue may have legal implications and affect the ease of resolving disputes, especially if the parties are located in different states.
         
+
         5.	Notice Address: The original agreement provides space for fax numbers for both parties, while the revised agreement omits this detail.
             o	Impact: This change may affect the efficiency of communication between the parties, especially if written communication is preferred or required.
 
