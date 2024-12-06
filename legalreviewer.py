@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import openai
 import docx
 import streamlit as st
+from PIL import Image
 
 # Load environment variables from .env file
 load_dotenv()
@@ -81,8 +82,13 @@ elif st.session_state.expanded_section == "Creator Info":
     st.sidebar.subheader("Creator Info")
     st.sidebar.markdown("""
     **Tool Created By**:  
-    [Sriram Kolathu](https://www.linkedin.com/in/sriram-kolathu-cpsm-61b03211/)  
+    **Sriram Kolathu**  
+    Data Science | CPSM  
+    [LinkedIn Profile](https://www.linkedin.com/in/sriram-kolathu-cpsm-61b03211/)  
     """)
+    #qr_image = Image.open("assets/linkedin_qr.png")
+    #resized_qr_image = qr_image.resize((10, 10)) 
+    #st.sidebar.image("assests/Linkedin.png",caption="Scan to visit LinkedIn", use_container_width=False)
 
 # Upload files
 st.header("Upload Documents for Comparison")
