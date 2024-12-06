@@ -127,7 +127,7 @@ if doc1_file and doc2_file:
         
         in case of payment term difference , then provide cost of finance or fincial impact based on wapt calculation and explain the financial imapct in real numbers for a period of one year. in the absence of contract value use USD 1000000 as base value for comparison use interest rate in USA or Canada for calculation. If query is not related to payment term avoid this fiancial impact due to payment term.
         
-        use the following template as example to generate your response for all clause where there is a difference: 
+        use the following template as example to generate your response for all clause where there is a difference, provide one line space between each points for better readbility: 
         Key Differences:
         
         1.	**PaymenClaut Terms:** The original agreement allows the client xx days to pay invoices, while the revised agreement reduces this to xx days.
