@@ -142,13 +142,6 @@ if doc1_file and doc2_file:
             o	Impact: The fixed term in the revised agreement provides more certainty and clarity regarding the duration of the contractual relationship.  
         
 
-        4.	**Jurisdiction and Venue:** The original agreement specifies Kansas as the governing law and jurisdiction, while the revised agreement changes the venue to New Jersey, USA.
-            o	Impact: The change in jurisdiction and venue may have legal implications and affect the ease of resolving disputes, especially if the parties are located in different states.  
-        
-
-        5.	**Notice Address:** The original agreement provides space for fax numbers for both parties, while the revised agreement omits this detail.
-            o	Impact: This change may affect the efficiency of communication between the parties, especially if written communication is preferred or required.  
-
 
         **Recommended Negotiation Strategy:**
 
