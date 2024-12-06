@@ -180,6 +180,8 @@ if doc1_file and doc2_file:
         Provide a detailed answer based on Comparison file in comparison to Reference file, prioritizing the Comparison file.
         you do not make up your own answers, limit the content to the documents. Limit the answer to max 100 words, 
         Reference file is the company agreed standard.
+        If the question is unrelated to the documents, respond with:
+        "The question is not related to the content of the provided documents. Please ask a relevant question."
          """
 
         try:
