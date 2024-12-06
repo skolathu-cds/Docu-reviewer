@@ -167,7 +167,7 @@ if doc1_file and doc2_file:
 
     def answer_question_with_gpt(question, doc2, doc1):
         prompt = f"""
-        You are a helpful assistant that can answer questions about two documents.
+        You are a helpful assistant of the client that can answer questions about two documents.
         Focus primarily on the Comparison file but consider the Reference file for comparisons.
 
         Comparison file:
