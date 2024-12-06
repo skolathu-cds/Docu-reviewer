@@ -15,6 +15,24 @@ if api_key:
 else:
     st.error("API Key not found. Please configure it in a .env file.")
 
+# Configure Streamlit page (hide the GitHub link and other elements)
+st.set_page_config(
+    page_title="Document Comparison and Analysis Tool",
+    page_icon="📄",
+    layout="wide",  # Choose 'wide' for a better layout
+    initial_sidebar_state="expanded"
+)
+
+# Hide Streamlit branding, GitHub link, and hamburger menu
+hide_streamlit_style = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 # Set up Streamlit UI
 st.title("Document Comparison and Analysis")
 
