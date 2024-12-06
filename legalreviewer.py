@@ -127,20 +127,12 @@ if doc1_file and doc2_file:
         
         in case of payment term difference , then provide cost of finance or fincial impact based on wapt calculation and explain the financial imapct in real numbers for a period of one year. in the absence of contract value use USD 1000000 as base value for comparison use interest rate in USA or Canada for calculation. If query is not related to payment term avoid this fiancial impact due to payment term.
         
-        use the following template as example to generate your response: 
+        use the following template as example to generate your response for all clause where there is a difference: 
         Key Differences:
         
         1.	**PaymenClaut Terms:** The original agreement allows the client xx days to pay invoices, while the revised agreement reduces this to xx days.
             o	Financial Impact: Using an interest rate of y% (average rate in the USA), the cost of financing the payment for xx days would be approximately x,xxx.xx  per year for a assumed contract value of USD x,xxx,xxx.  
 
-
-        2.	**Termination Notice Period:** The original agreement requires a xx-day advance written notice for termination, whereas the revised agreement extends this to 60 days.
-            o	Impact: The longer notice period in the revised agreement provides more time for both parties to prepare for termination, potentially reducing any abrupt disruptions in services.  
-        
-        
-        3.	**Term Duration:** The original agreement has an indefinite term until cancelled with a 40-day notice, while the revised agreement specifies a fixed term of x yyyy from the date of contract execution.
-            o	Impact: The fixed term in the revised agreement provides more certainty and clarity regarding the duration of the contractual relationship.  
-        
 
 
         **Recommended Negotiation Strategy:**
