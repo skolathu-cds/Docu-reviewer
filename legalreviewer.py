@@ -84,7 +84,7 @@ elif st.session_state.expanded_section == "Creator Info":
     **Tool Created By**:  
     **Sriram Kolathu**  
     Data Science | CPSM  
-    [LinkedIn Profile](https://www.linkedin.com/in/sriram-kolathu-cpsm-61b03211/)  
+    [LinkedIn](https://www.linkedin.com/in/sriram-kolathu-cpsm-61b03211/)  
     """)
     #qr_image = Image.open("assets/linkedin_qr.png")
     #resized_qr_image = qr_image.resize((10, 10)) 
