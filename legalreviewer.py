@@ -60,7 +60,7 @@ if st.session_state.expanded_section == "About the Tool":
     st.sidebar.subheader("About the Tool")
     st.sidebar.markdown("""
     **Gen-AI Document Comparison Tool**  
-    This tool uses Generative AI / Large Language Models (LLMs) to:
+    This tool uses Generative AI and Large Language Models (LLMs) to:
     - Compare two documents and summarize key differences with a focus on semantic understanding.
     - Answer questions based on document content.
     - Generate concise summaries that highlight meaningful differences.
