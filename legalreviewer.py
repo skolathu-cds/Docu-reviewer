@@ -18,7 +18,7 @@ else:
 
 # Configure Streamlit page (hide the GitHub link and other elements)
 st.set_page_config(
-    page_title="Document Comparison and Analysis Tool",
+    page_title="Welcome to DocInsight",
     page_icon="📄",
     layout="wide",  # Choose 'wide' for a better layout
     initial_sidebar_state="expanded"
@@ -35,7 +35,7 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Set up Streamlit UI
-st.title("Document Comparison and Analysis")
+st.title("Welcome to DocInsight")
 
 # Sidebar Navigation
 if "expanded_section" not in st.session_state:
@@ -57,7 +57,7 @@ for section in sections:
 # Show content of the selected section
 st.sidebar.markdown("---")
 if st.session_state.expanded_section == "About":
-    st.sidebar.subheader("About **Gen-AI Document Comparison Tool**")
+    st.sidebar.subheader("About **DocInsight**")
     st.sidebar.markdown("""
      This tool uses Generative AI and Large Language Models (LLMs) to:
     - Compare two documents and summarize key differences with a focus on semantic understanding.
