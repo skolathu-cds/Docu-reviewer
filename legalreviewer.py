@@ -61,14 +61,14 @@ if st.session_state.expanded_section == "About the Tool":
     st.sidebar.markdown("""
     **Gen-AI Document Comparison Tool**  
     This tool uses Generative AI / Large Language Models (LLMs) to:
-    1. Compare two documents and summarize key differences with a focus on semantic understanding.
-    2. Answer questions based on document content.
-    3. Generate concise summaries that highlight meaningful differences.
+    - Compare two documents and summarize key differences with a focus on semantic understanding.
+    - Answer questions based on document content.
+    - Generate concise summaries that highlight meaningful differences.
 
     **How to use**:
-    1. Upload Files: Add your reference and comparison .docx files.
-    2. Run Analysis: Use the interface buttons to compare, ask questions, or generate summaries.
-    3. Review Results: View the key differences and answers provided by the AI.
+    - Upload Files: Add your reference and comparison .docx files.
+    - Run Analysis: Use the interface buttons to compare, ask questions, or generate summaries.
+    - Review Results: View the key differences and answers provided by the AI.
     """)
 elif st.session_state.expanded_section == "Disclaimer":
     st.sidebar.subheader("Disclaimer")
