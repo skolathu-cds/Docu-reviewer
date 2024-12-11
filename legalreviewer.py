@@ -48,7 +48,7 @@ def set_section(section):
 st.sidebar.title("Navigation")
 
 # Rectangular sections in the sidebar
-sections = ["About the Tool", "Disclaimer", "Creator Info"]
+sections = ["About", "Disclaimer", "Creator Info"]
 
 for section in sections:
     if st.sidebar.button(section, use_container_width=True):
@@ -56,11 +56,10 @@ for section in sections:
 
 # Show content of the selected section
 st.sidebar.markdown("---")
-if st.session_state.expanded_section == "About the Tool":
-    st.sidebar.subheader("About the Tool")
+if st.session_state.expanded_section == "About":
+    st.sidebar.subheader("About **Gen-AI Document Comparison Tool**")
     st.sidebar.markdown("""
-    **Gen-AI Document Comparison Tool**  
-    This tool uses Generative AI and Large Language Models (LLMs) to:
+     This tool uses Generative AI and Large Language Models (LLMs) to:
     - Compare two documents and summarize key differences with a focus on semantic understanding.
     - Answer questions based on document content.
     - Generate concise summaries that highlight meaningful differences.
