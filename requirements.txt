@@ -2,3 +2,10 @@ streamlit
 openai==0.28.0
 python-docx
 python-dotenv
+nltk
+sentence_transformers
+PyPDF2
+scikit-learn
+pandas
+PyMuPDF
+markdown
