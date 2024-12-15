@@ -1,6 +1,8 @@
 import os
 import streamlit as st
 import nltk
+nltk.download('stopwords')
+nltk.download('punkt_tab')
 import fitz  # PyMuPDF
 import docx
 from nltk.tokenize import sent_tokenize
