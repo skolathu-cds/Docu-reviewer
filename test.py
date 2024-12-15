@@ -1,5 +1,4 @@
 import os
-import nltk_helper
 from nltk.tokenize import sent_tokenize
 from nltk.data import find
 from nltk.corpus import stopwords
@@ -9,18 +8,7 @@ import fitz  # PyMuPDF for PDF processing
 import docx
 import streamlit as st
 
-# Ensure NLTK resources are available
-def ensure_nltk_resources():
-    resources = ['punkt', 'stopwords']
-    for resource in resources:
-        try:
-            find(f'tokenizers/{resource}' if resource == 'punkt' else f'corpora/{resource}')
-        except LookupError:
-            print(f"Downloading NLTK resource: {resource}...")
-            nltk_helper.download(resource)
 
-# Call to ensure resources are ready
-ensure_nltk_resources()
 
 # Function to extract text from PDF
 def extract_text_from_pdf(file):
